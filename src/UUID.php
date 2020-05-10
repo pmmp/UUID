@@ -114,10 +114,9 @@ final class UUID{
 	}
 
 	/**
-	 * @return int
 	 * @throws \InvalidArgumentException
 	 */
-	public function getPart(int $partNumber){
+	public function getPart(int $partNumber) : int{
 		if($partNumber < 0 or $partNumber > 3){
 			throw new \InvalidArgumentException("Invalid UUID part index $partNumber");
 		}
